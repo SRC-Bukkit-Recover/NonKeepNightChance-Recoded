@@ -49,6 +49,8 @@ public class Utils {
     }
 
     static void sendTitle(Config title, Config subtitle, Player... players) {
+        if (!NonKeepNightChance.isTitleEnabled) return;
+
         int fadein = (int) getValueFromConfig(Config.TITLE_FADEIN);
         int stay = (int) getValueFromConfig(Config.TITLE_STAY);
         int fadeout = (int) getValueFromConfig(Config.TITLE_FADEOUT);

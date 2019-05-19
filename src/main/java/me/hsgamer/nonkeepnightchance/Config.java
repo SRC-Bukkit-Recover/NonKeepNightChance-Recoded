@@ -20,6 +20,7 @@ public enum Config {
     TITLE_FADEIN("settings.title.fadein", 20),
     TITLE_STAY("settings.title.stay", 40),
     TITLE_FADEOUT("settings.title.fadeout", 20),
+    TITLE_ENABLED("settings.title.enable", true),
 
     WORLDS("settings.worlds", Collections.singletonList(
             "world : 0.5"
