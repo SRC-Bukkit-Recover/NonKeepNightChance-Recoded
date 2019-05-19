@@ -55,14 +55,16 @@ public class Utils {
         String stitle = ChatColor.translateAlternateColorCodes('&', (String) getValueFromConfig(title));
         String ssubtitle = ChatColor.translateAlternateColorCodes('&', (String) getValueFromConfig(subtitle));
 
-        if (NonKeepNightChance.legacy && NonKeepNightChance.isTitleAPIEnabled) {
-            Title title1 = new Title();
-            title1.setTitle(stitle);
-            title1.setSubTitle(ssubtitle);
-            title1.setFadeIn(fadein);
-            title1.setStay(stay);
-            title1.setFadeOut(fadeout);
-            title1.sendTitle(players);
+        if (NonKeepNightChance.legacy) {
+            if (NonKeepNightChance.isTitleAPIEnabled) {
+                Title title1 = new Title();
+                title1.setTitle(stitle);
+                title1.setSubTitle(ssubtitle);
+                title1.setFadeIn(fadein);
+                title1.setStay(stay);
+                title1.setFadeOut(fadeout);
+                title1.sendTitle(players);
+            }
         } else {
             for (Player player : players) {
                 player.sendTitle(stitle, ssubtitle, fadein, stay, fadeout);
