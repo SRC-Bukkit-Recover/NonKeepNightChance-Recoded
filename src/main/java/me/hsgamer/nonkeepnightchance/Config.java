@@ -26,10 +26,10 @@ public enum Config {
             "world : 0.5"
     )),
     DELAY("settings.check.delay", 10),
-    ASYNC("settings.check.async", false)
-    ;
+    ASYNC("settings.check.async", false);
     String path;
     Object def;
+
     Config(String path, Object def) {
         this.path = path;
         this.def = def;
