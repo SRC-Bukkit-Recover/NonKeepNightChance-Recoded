@@ -3,6 +3,7 @@ package me.hsgamer.nonkeepnightchance;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import javax.rmi.CORBA.Util;
 import java.util.HashMap;
 import java.util.List;
 
@@ -21,7 +22,8 @@ public final class NonKeepNightChance extends JavaPlugin {
         isTitleEnabled = (boolean) Utils.getValueFromConfig(Config.TITLE_ENABLED);
 
         if (legacy && isTitleEnabled && !isTitleAPIEnabled) {
-            Utils.sendMessage(getServer().getConsoleSender(), "&cYou are using a legacy version of bukkit, but TitleAPI seems to be unavailable. Will ignore");
+            Utils.sendMessage(getServer().getConsoleSender(), "&cYou are using a legacy version of bukkit, but TitleAPI seems to be unavailable. Ignored");
+            Utils.sendMessage(getServer().getConsoleSender(), "&bLink: &fhttps://www.spigotmc.org/resources/titleapi-1-8-1-13.40201/");
             isTitleEnabled = false;
         }
 
