@@ -17,9 +17,9 @@ public enum Config {
     KEEP_NIGHT_TITLE("message.night-keep-title", "&b&lNIGHT"),
     KEEP_NIGHT_SUBTITLE("message.night-keep-subtitle", "&eKeep items on death"),
 
-    TITLE_FADEIN("title.fadein", 20),
-    TITLE_STAY("title.stay", 40),
-    TITLE_FADEOUT("title.fadeout", 20),
+    TITLE_FADEIN("settings.title.fadein", 20),
+    TITLE_STAY("settings.title.stay", 40),
+    TITLE_FADEOUT("settings.title.fadeout", 20),
 
     WORLDS("settings.worlds", Collections.singletonList(
             "world : 0.5"
