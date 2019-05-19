@@ -38,7 +38,7 @@ public class Runnable extends BukkitRunnable {
                 Utils.sendTitle(Config.KEEP_DAY_TITLE, Config.KEEP_DAY_SUBTITLE, c);
             }
             Utils.sendMessage(Bukkit.getConsoleSender(), ChatColor.RED + "[" + world.getName() + "] " + ChatColor.translateAlternateColorCodes('&', (String) Utils.getValueFromConfig(Config.KEEP_DAY)));
-        } else {
+        } else if (!isNightWorld && world.getTime() >= 13700L) {
 
             if (Math.random() <= chance) {
 
