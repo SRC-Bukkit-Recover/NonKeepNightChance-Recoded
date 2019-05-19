@@ -1,0 +1,7 @@
+name: NonKeepNightChance
+version: ${project.version}
+main: me.hsgamer.nonkeepnightchance.NonKeepNightChance
+api-version: 1.13
+authors: [HSGamer]
+softdepend: [TitleAPI]
+description: Keep day, Keep nigh, Non-keep night
