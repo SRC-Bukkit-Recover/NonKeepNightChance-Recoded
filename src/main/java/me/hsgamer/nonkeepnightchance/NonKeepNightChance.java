@@ -44,4 +44,8 @@ public final class NonKeepNightChance extends JavaPlugin {
             }
         }
     }
+
+    public static HashMap<String, Runnable> getWorlds() {
+        return getWorlds();
+    }
 }
